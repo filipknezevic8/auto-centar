@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-width: 450px;
+}
+
+nav {
+  padding: 10px;
+  background-color: #dde0e9;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #003153;
+}
+nav ul li a img {
+  height: 40px;
+}
+nav ul li a:hover {
+  color: #b96d34;
+}
+nav ul .nav-more {
+  display: none;
+}
+
+.sellers {
+  background-image: url(https://i.ibb.co/Z6HPGPj0/road-without-car.jpg);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sellers h1 {
+  color: #003153;
+  padding: 20px 50px;
+}
+.sellers .locations {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sellers .locations div {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.sellers .locations div h2 {
+  padding: 5px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #003153;
+  text-align: center;
+}
+.sellers .locations div p {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #003153;
+  width: fit-content;
+}
+.sellers .locations div p span {
+  color: #b96d34;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sellers .locations div:hover {
+  border-color: #003153;
+}
+
+.cars {
+  display: flex;
+  padding: 40px 20px;
+  color: #003153;
+}
+.cars form {
+  width: 60%;
+  background-color: #dde0e9;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #003153;
+}
+.cars .dream-car {
+  text-align: center;
+  display: flex;
+}
+.cars .dream-car img {
+  width: 70%;
+}
+.cars .dream-car .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cars .dream-car .description h4 {
+  font-size: 30px;
+}
+.cars .dream-car .description p {
+  font-size: 35px;
+}
+.cars .calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cars .calculator div {
+  width: 45%;
+  padding: 10px;
+  margin-top: 15px;
+}
+.cars .calculator label {
+  display: block;
+  margin-bottom: 5px;
+}
+.cars .calculator input,
+.cars .calculator select {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #003153;
+  border-radius: 20px;
+}
+.cars .calculator .car-color label:first-child {
+  width: 100%;
+}
+.cars .calculator .car-color label,
+.cars .calculator .car-color input {
+  display: inline-block;
+  width: 40%;
+}
+.cars .calculator input[type=range] {
+  padding: 0;
+  width: 45%;
+}
+.cars .offers {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+}
+.cars .offers div {
+  width: 40%;
+  padding: 10px 0;
+  background-color: #dde0e9;
+  border: 1px solid #003153;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cars .offers div img {
+  width: 100%;
+  margin: 0 auto;
+}
+.cars .offers div#central-car {
+  width: 80%;
+}
+
+footer {
+  background: #003153;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+}
+footer a:last-child {
+  width: 30%;
+  text-align: end;
+}
+
+/*# sourceMappingURL=styles.css.map */

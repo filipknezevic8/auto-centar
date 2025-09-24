@@ -9,3 +9,188 @@
 body {
     min-width: 450px;
 }
+
+nav {
+    padding: 10px;
+    background-color: $blue_background;
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        li {
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $blue_text_color;
+                img {
+                    height: 40px;
+                }
+            }
+            a:hover {
+                color: $gold_brown_color;
+            }
+        }
+        .nav-more {
+            display: none;
+        }
+    }
+}
+
+.sellers {
+    background-image: url(https://i.ibb.co/Z6HPGPj0/road-without-car.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        color: $blue_text_color;
+        padding: 20px 50px;
+    }
+    .locations {
+        display: flex;
+        justify-content: space-evenly;
+        div {
+            width: 20%;
+            background-color: $gray_background;
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px solid white;
+            h2 {
+                padding: 5px 0;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: $blue_text_color;
+                text-align: center;
+            }
+            p {
+                padding-top: 15px;
+                font-size: 18px;
+                font-weight: 100;
+                color: $blue_text_color;
+                width: fit-content;
+                span {
+                    color: $gold_brown_color;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+        div:hover {
+            border-color: $blue_text_color;
+        }
+    }
+}
+
+.cars {
+    display: flex;
+    padding: 40px 20px;
+    color: $blue_text_color;
+    form {
+        width: 60%;
+        background-color: $blue_background;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid $blue_text_color;
+    }
+    .dream-car {
+        text-align: center;
+        display: flex;
+        img {
+            width: 70%;
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h4 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 35px;
+            }
+        }
+    }
+    .calculator {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div {
+            width: 45%;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input,
+        select {
+            width: 100%;
+            padding: 5px 10px;
+            border: 1px solid $blue_text_color;
+            border-radius: 20px;
+        }
+        .car-color {
+            label:first-child {
+                width: 100%;
+            }
+            label,
+            input {
+                display: inline-block;
+                width: 40%;
+            }
+        }
+        input[type="range"] {
+            padding: 0;
+            width: 45%;
+        }
+    }
+    .offers {
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 10px;
+        div {
+            width: 40%;
+            padding: 10px 0;
+            background-color: $blue_background;
+            border: 1px solid $blue_text_color;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        div#central-car {
+            width: 80%;
+        }
+    }
+}
+
+footer {
+    background: $blue_text_color;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    a:last-child {
+        width: 30%;
+        text-align: end;
+    }
+}
