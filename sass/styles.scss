@@ -194,3 +194,119 @@ footer {
         text-align: end;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    nav {
+        ul {
+            li {
+                width: 15%;
+            }
+            .nav-more {
+                display: inline-block;
+            }
+            .nav-hide {
+                display: none;
+            }
+        }
+    }
+    .test-drive {
+        .car {
+            right: 20%;
+            bottom: 7%;
+        }
+    }
+    .cars {
+        flex-direction: column-reverse;
+        gap: 40px;
+        form {
+            width: 100%;
+        }
+        .offers {
+            width: 100%;
+        }
+    }
+    footer {
+        flex-wrap: wrap;
+        a:last-child {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 10px 10px;
+        ul {
+            justify-content: space-between;
+            li,
+            .nav-more {
+                display: none;
+            }
+            .nav-image {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        ul:hover {
+            flex-direction: column;
+            li {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+            .nav-more {
+                display: none;
+            }
+        }
+    }
+    .test-drive {
+        .car {
+            bottom: 10%;
+            height: 35%;
+        }
+    }
+    .sellers {
+        height: fit-content;
+        .locations {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+            div {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .cars {
+        form {
+            width: 100%;
+            .dream-car {
+                flex-direction: column-reverse;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .offers {
+            div {
+                width: 100%;
+            }
+            div#central-car {
+                width: 100%;
+            }
+        }
+    }
+    footer {
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: self-end;
+        a {
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}
